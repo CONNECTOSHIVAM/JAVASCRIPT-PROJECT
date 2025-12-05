@@ -1,0 +1,18 @@
+div{
+    height: 100px;
+    width: 100px;
+    background: #d13b3b;
+    border-radius: 32px;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: margin-top 2s ease-in-out 0.5s;
+}
+
+div:hover{
+    margin-top: 400px;
+    background: rgb(186, 186, 42);
+    transform: rotate(45deg);
+    transform: scale(1.1);
+    transform: translateY(100px);
+    transform: skew(30deg);
+}
