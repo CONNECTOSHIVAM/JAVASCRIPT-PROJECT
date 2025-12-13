@@ -1,0 +1,33 @@
+.container{
+    width: 70%;
+    margin: auto;
+    text-align: center;
+}
+.dice{
+    text-align: center;
+    display: inline-block;
+}
+body{
+   background:  wheat;
+}
+h1{
+    margin: 30px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 9rem;
+    text-shadow: 5px 0 #232931;
+    color: rgb(114, 8, 8);
+}
+p{
+    font-size: 2rem;
+    color: #232323;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+img{
+    width: 80%;
+}
+footer{
+    margin-top: 5%;
+    text-align: center;
+    color: #121212;
+    font-family: fantasy;
+}
