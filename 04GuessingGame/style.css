@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: #232323;
+    font-family: cursive;
+}
+
+nav {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #c4b9b9;
+    gap: 10px;
+}
+
+nav a {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: rebeccapurple;
+    background: #ece6e6;
+    border: 1px solid plum;
+    text-decoration: underline;
+}
+
+h1 {
+    margin-top: 2rem;
+    padding: 1rem;
+    background: #000;
+    color: rgb(205, 118, 205);
+    width: 25%;
+    border-radius: 0 3rem 0 0;
+}
+
+.form {
+    background: rgb(168, 136, 141);
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    border-radius: 11rem 0 0 0;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    margin-left: 25%;
+    padding: 5rem;
+}
+
+input {
+    background-color: rgb(168, 136, 141);
+}
+
+#guess {
+    background: rgb(168, 136, 141);
+    font-weight: bolder;
+    color: rgb(81, 29, 29);
+    font-size: 5rem;
+}
+
+#guessField {
+    height: 200px;
+    width: 200px;
+    border-radius: 40%;
+    background: #121212;
+    text-decoration: none;
+    border: none;
+    font-size: 3rem;
+    color: pink;
+    padding: 1rem;
+    text-align: center;
+}
+
+#subt {
+    height: 60px;
+    width: 300px;
+    border-radius: 1rem;
+    /* text-decoration: none; */
+    /* border: 1px solid black; */
+}
+
+.resultParse {
+    margin-left: 25%;
+    display: flex;
+    padding: 3rem;
+    flex-direction: column;
+    background: rgb(168, 136, 141);
+    font-weight: 800;
+    font-size: 2rem;
+
+}
+
+.resultParse p {
+    background: rgb(190, 180, 182);
+    padding: 1rem;
+    color: rgb(125, 35, 35);
+
+}
+
+.lastResult {
+    background: rgb(190, 180, 182);
+    color: rgb(125, 35, 35);
+}
+
+.crunch {
+    background-color: rgb(168, 136, 141);
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    margin-left: 25%;
+    border-radius: 0 0 8rem 0;
+}
+
+h2 {
+    background-color: #a8888d;
+    font-size: 3rem;
+    font-weight: 800;
+    color: rgb(125, 35, 35);
+    margin-bottom: 1rem;
+}
+
+.crunch p {
+    background: rgb(168, 136, 141);
+    margin-left: 1rem;
+    font-size: 1.5rem;
+}
+
+#wrapper {
+    margin-bottom: 3rem;
+}
+.guesses{
+    background: rgb(190, 180, 182);
+}
+.lowOrHi h2{
+    margin-left: 10px;
+    padding: 1px;
+    border-radius: 1rem;
+    background: #121212;
+}
