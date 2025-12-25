@@ -24,7 +24,25 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     function renderTask(task) {
-        console.log(task)
+        const li = document.createElement('li');
+        li.setAttribute('data-id',task.id);
+        if(task.completed) li.classList.add("completed");
+        li.innerHTML= `<span>${task.text}</span><button>delete</button>`;
+        todoList.appendChild(li);
+
+        li.addEventListener('click',(e)=>{
+            if(e.target.tagname === 'BUTTON') return 
+            task.completed = !task.completed
+            li.classList.toggle('completed');
+            saveTasks()
+        })
+
+        li.querySelector('button').addEventListener('click',(e)=>{
+           e.stopPropagation(); //prevent toggle from firing
+           tasks = tasks.filter(t => t.id !== task.id);
+           li.remove();
+           saveTasks();
+        })
     }
 
 

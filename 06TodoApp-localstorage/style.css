@@ -1,14 +1,17 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: cursive;
 }
-html,body{
-   height: 100vh;
-   width: 100%;
-   background: whitesmoke;
+
+html,
+body {
+    height: 100vh;
+    width: 100%;
+    background: whitesmoke;
 }
-.wave{
+
+.wave {
     position: absolute;
     bottom: 0;
     height: 500px;
@@ -17,57 +20,101 @@ html,body{
     background-size: cover;
     background-position: bottom;
 }
-.card{
+
+.card {
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
-.box{
+
+.box {
     margin-top: 120px;
     text-align: center;
     background: rgb(239, 238, 236);
     padding: 20px;
     height: 650px;
     width: 450px;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
     border-radius: 5rem 5rem 0 7rem;
     z-index: 1;
 }
-h2{
+
+h2 {
     font-size: 35px;
-    text-decoration: underline rgb(180, 180, 26);
+    text-decoration: underline double #FFD41D;
     margin-bottom: 20px;
 }
-.input-container{
+
+.input-container {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
 }
-#todo-input{
+
+#todo-input {
     width: 75%;
     padding: 15px;
     border: 1px solid rgb(231, 210, 21);
     font-size: larger;
-    border-radius: 0.4rem;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border-radius: 0.5rem;
     outline: none;
-    color: black ;
+    color: black;
 
 }
-button{
+
+button {
     width: 17%;
     margin-left: 5px;
     border-radius: 0.3rem;
     border: none;
-    background: rgb(231, 210, 21);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+    background: #FFD41D;
     font-size: larger;
     font-weight: bold;
     cursor: pointer;
 }
-button:hover{
-    background: white;
+
+button:hover {
+    background: #9E2A3A;
+    color: white;
 }
-ul{
+
+ul {
     list-style-type: none;
     padding: 0;
+}
+
+li {
+    background: whitesmoke;
+    padding: 10px;
+    margin-top: 7px;
+    border-radius: 1rem 0.2rem 0.2em;
+    display: flex;
+    justify-content: space-between;
+    border: 0.5px solid #9E2A3A;
+    align-items: center;
+    font-size: 18px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+li.completed{
+    text-decoration: line-through wavy #FFD41D;
+    opacity: 0.7;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    border: 0.5px solid #FFD41D;
+}
+li button{
+    background: #9E2A3A;
+    padding: 5px ;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+li button:hover{
+    background: #FFD41D;
+    color: black;
+}
+li span{
+    font-size: 1.5rem;
 }
