@@ -1,4 +1,5 @@
-const API_KEY = 'b74e3ee04ef7a010c50e3b225814eb60';
+// const API_KEY = 'b74e3ee04ef7a010c50e3b225814eb60';
+const API_KEY = '63ec496c417a712baa5f15ac7621bf55'
 const API_BASE = "https://api.openweathermap.org/data/2.5/weather";
 
 // ---------- DOM references ----------

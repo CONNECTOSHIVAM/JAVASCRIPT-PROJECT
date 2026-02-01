@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         tasks.push(newTask);
         saveTasks();
+        renderTask(newTask);
         todoInput.value = ""; // clear input
 
         console.log(tasks)
