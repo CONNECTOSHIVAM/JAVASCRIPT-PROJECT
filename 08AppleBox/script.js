@@ -7,11 +7,23 @@ let totalApple = 15;
 let bucketTwoApple = 0;
 let bucketOneApple = totalApple - bucketTwoApple;
 
-rightArrow.addEventListener('click',()=>{
-    bucketOneApple--;
-    rightArrow.innerHTML=bucketOneApple
-    bucketTwoApple++;
-    leftArrow.innerHTML=bucketTwoApple
+rightArrow.addEventListener('click', () => {
+    if (bucketOneApple > 0) {
+        bucketOneApple--;
+        bucketOne.innerHTML = bucketOneApple
+        bucketTwoApple++;
+        bucketTwo.innerHTML = bucketTwoApple
+    }
+})
+
+leftArrow.addEventListener('click',()=>{
+    if(bucketTwoApple>0)
+    {
+        bucketTwoApple--;
+        bucketTwo.innerHTML = bucketTwoApple;
+        bucketOneApple++;
+        bucketOne.innerHTML = bucketOneApple;
+    }
 })
 
 
