@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+    background: #232323;
+    color: rgb(188, 191, 194);
+}
+body{
+    height: 100vh;
+    width: 100%;
+}
+h1{
+    text-align: center;
+    margin-top: 3rem;
+    font-size: 3rem;
+    color: rgb(176, 79, 44);
+    text-decoration: underline;
+}
+.box{
+    height: 600px;
+    width: 85%;
+    border: 5px double rgb(176, 79, 44);
+    margin: 3% auto;
+    color: rgb(176, 79, 44);
+    border-radius: 1rem;
+}
+.foot{
+    display: flex;
+    margin-top: 32%;
+    justify-content: space-around;
+}
+.a2{
+    text-align: center;
+    height: 50px;
+    width: 320px;
+    font-size: 1.5rem;
+    background: #000;
+    border-radius: 0.5rem;
+    outline: rgb(132, 97, 32) solid 1px;
+}
