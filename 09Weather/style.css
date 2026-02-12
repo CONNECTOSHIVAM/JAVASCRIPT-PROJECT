@@ -39,3 +39,6 @@ h1{
     border-radius: 0.5rem;
     outline: rgb(132, 97, 32) solid 1px;
 }
+h1{
+    background: transparent;
+}
