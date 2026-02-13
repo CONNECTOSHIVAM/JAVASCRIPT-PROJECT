@@ -1,7 +1,7 @@
 const yellowBtn = document.querySelector('.yellow');
 const orangeBtn = document.querySelector('.orange');
-const randomBtn = document.querySelector('.white');
-const greenBtn = document.querySelector('.olive');
+const randomBtn = document.querySelector('.random');
+const greenBtn = document.querySelector('.green');
 const box = document.querySelector('.box');
 const h2 = document.querySelector('h2');
 
@@ -71,24 +71,31 @@ const lines = [
 
 
 yellowBtn.addEventListener('click', () => {
+    let randomlines = lines[Math.floor(Math.random() * lines.length)];
+    h2.innerText = randomlines + '❤️';
     box.style.backgroundColor = '#E5BA41';
     yellowBtn.style.color = '#E5BA41';
 })
 
+
 orangeBtn.addEventListener('click', () => {
+    const randomlines = lines[Math.floor(Math.random() * lines.length)];
+    h2.innerText = randomlines + '❤️';
     box.style.backgroundColor = '#F16D34';
     orangeBtn.style.color = '#F16D34';
 })
 
 randomBtn.addEventListener('click', () => {
-
-    let ox = colorGenerator();
-    box.style.backgroundColor = ox;
-    randomBtn.style.color = ox;
+    const randomlines = lines[Math.floor(Math.random() * lines.length)];
+    h2.innerText = randomlines + '❤️';
+    const randomColor = colorGenerator();
+    box.style.backgroundColor = randomColor;
+    randomBtn.style.color = randomColor;
 })
 
 greenBtn.addEventListener('click', () => {
-    box.style.backgroundColor = '#5C6F2B';
-    greenBtn.style.color = '#5C6F2B';
+    const randomlines = lines[Math.floor(Math.random() * lines.length)];
+    h2.innerText = randomlines + '❤️';
+    box.style.backgroundColor = '#F57799';
+    greenBtn.style.color = '#F57799';
 })
-
