@@ -72,7 +72,7 @@ const lines = [
 
 yellowBtn.addEventListener('click', () => {
     let randomlines = lines[Math.floor(Math.random() * lines.length)];
-    h2.innerText = randomlines + '❤️';
+    h2.innerText = randomlines +  '❤️';
     box.style.backgroundColor = '#E5BA41';
     yellowBtn.style.color = '#E5BA41';
 })
