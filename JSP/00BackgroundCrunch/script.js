@@ -78,7 +78,7 @@ const randomLines = () => {
 const applyTheme = (color, button) => {
     h2.innerText = randomLines();
     box.style.backgroundColor = color;
-    button.style.color = color;
+    button.style.borderColor = color;
 }
 
 // Event Listerners

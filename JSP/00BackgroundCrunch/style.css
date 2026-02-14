@@ -35,6 +35,7 @@ h1{
    width: 320px;
    background: #353131;
    border-radius: 0.5rem;
+   border: 1px solid rgb(104, 104, 130);
    outline: rgb(104, 104, 130) solid 1px;
 }
 
