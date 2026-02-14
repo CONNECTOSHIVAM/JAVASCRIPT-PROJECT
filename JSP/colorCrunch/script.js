@@ -16,5 +16,18 @@ const generateColor = ()=>{
     {
         color += hex[Math.floor(Math.random()*16)];
     }
-    return color
+    return color;
 }
+
+const randomLines = ()=>{
+    return lines[Math.floor(Math.random()*lines.length)] + ' ❤️';
+}
+
+const applyTheme = (color, button)=>{
+    h2.innerText = randomLines();
+    box.style.backgroundColor = color;
+    button.style.color = color;
+}
+
+// Event Listerners
+buttons.yellow.addEventListener('click'
