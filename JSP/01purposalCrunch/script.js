@@ -4,6 +4,16 @@ const buttons = {
     this: document.querySelector('.this')
 }
 
+const musicTracks = [
+    document.getElementById('music1'),
+    document.getElementById('music2'),
+    document.getElementById('music3'),
+    document.getElementById('music4'),
+    document.getElementById('music5')
+];
+
+
+
 const box = document.querySelector('.box');
 const h2 = document.querySelector('h2')
 const img = document.querySelector('.imge img')
@@ -11,7 +21,7 @@ const img = document.querySelector('.imge img')
 const colorGenerator = () => {
     const hex = "0123456789ABCDEF";
     let color = "#"
-    for (let i = 0; i <= 6; i++) {
+    for (let i = 0; i < 6; i++) {
         color += hex[Math.floor(Math.random() * 16)]
     }
     return color;
@@ -106,28 +116,92 @@ const loveLines = [
 ];
 
 
+const imageFiles = [];
+for (let i = 2; i <= 652; i++) {
+    imageFiles.push(`pic${i}.jpg`)
+}
+
+
+
 const getRandomLines = () => {
-    return loveLines[Math.floor(Math.random) * loveLines.length]
+    return loveLines[Math.floor(Math.random() * loveLines.length)]
+}
+
+const getRandomImage = ()=>{
+    let randomImage = imageFiles[Math.floor(Math.random() * imageFiles.length)];
+    return "images/"+randomImage;
 }
 
 const applyTheme = (color, button) => {
-
-    h2.innerText = getRandomLines();
-    h2.style.textDecoration = color;
+    h2.innerText = "“ " + getRandomLines() + " ”";
     button.style.borderColor = color;
-}
+    box.style.boxShadow = `0 0 20px ${color}`;
+    img.style.border = `10px solid ${color}`;
+    img.src = getRandomImage();
+};
+
 
 buttons.love.addEventListener('click', () => {
     const color = colorGenerator();
-    applyTheme("#F57799", buttons.love)
+    applyTheme(color, buttons.love)
+
+
+    //stop any currently playing track.
+    musicTracks.forEach((track) => {
+        track.pause();
+        track.currentTime = 0;
+    });
+
+    //pick a random music
+    const randomTrack = musicTracks[Math.floor(Math.random() * musicTracks.length)];
+    randomTrack.play()
+
+    //stop after 5 seconds
+    setTimeout(() => {
+        randomTrack.pause();
+        randomTrack.currentTime = 0;
+    }, 3000);
 })
 
 buttons.heaven.addEventListener('click', () => {
     const color = colorGenerator();
     applyTheme(color, buttons.heaven)
+
+    //stop any currently playing track.
+    musicTracks.forEach((track) => {
+        track.pause();
+        track.currentTime = 0;
+    });
+
+    //pick a random music
+    const randomTrack = musicTracks[Math.floor(Math.random() * musicTracks.length)];
+    randomTrack.play()
+
+    //stop after 5 seconds
+    setTimeout(() => {
+        randomTrack.pause();
+        randomTrack.currentTime = 0;
+    }, 3000);
 })
 
 buttons.this.addEventListener('click', () => {
     const color = colorGenerator();
     applyTheme(color, buttons.this)
+
+
+    //stop any currently playing track.
+    musicTracks.forEach((track) => {
+        track.pause();
+        track.currentTime = 0;
+    });
+
+    //pick a random music
+    const randomTrack = musicTracks[Math.floor(Math.random() * musicTracks.length)];
+    randomTrack.play()
+
+    //stop after 5 seconds
+    setTimeout(() => {
+        randomTrack.pause();
+        randomTrack.currentTime = 0;
+    }, 3000);
 })
