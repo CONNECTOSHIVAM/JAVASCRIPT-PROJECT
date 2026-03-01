@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: #4e085f;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .container{
@@ -13,8 +14,10 @@
     background: linear-gradient(135deg, #153677, #4e085f);
 }
 .todo-app{
-    text-align: center;
-    height: 500px;
-    width: 400px;
-    background-color: #153677;
+    width: 100%;
+    max-width: 540px;
+    background: #000;
+    margin: 100px auto ;
+    padding: 60px 70px;
+    border-radius: 10px;
 }
