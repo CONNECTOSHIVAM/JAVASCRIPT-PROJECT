@@ -3,17 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="description" content="Color Switcher App">
+    <title>Color Switcher</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <h1>Color Switcher</h1>
     <div class="container">
        <button class="btn random">random</button>
-       <input class="inp" type="text" placeholder="drop here your fav color...">
+       <input id="colorInput" class="inp" type="text" placeholder="drop here your fav color...">
        <button class="btn apply">Apply</button>
     </div>
-    <div class="color-text">current color: </div>
+    <p class="error-msg" id="errorMsg"></p>
+    <div class="color-text" id="colorText">color code: #232323 </div>
 
     <!-- connect javascript -->
     <script src="script.js"></script>
