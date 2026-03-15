@@ -1,27 +1,44 @@
-    const randomBtn = document.querySelector(".random");
-    const applyBtn = document.querySelector(".apply");
-    const colorInput = document.querySelector(".inp");
-    const currentColorText = document.querySelector(".color-text");
+const randomBtn = document.querySelector(".random");
+const applyBtn = document.querySelector(".apply");
+const colorInput = document.getElementById("colorInput");
+const errorMsg = document.getElementById("errorMsg");
+const colorText = document.getElementById("colorText");
 
-    randomBtn.addEventListener("click", () => {
-        const colorCode = "0123456789abcdef";
-        let color = '#';
-        for(let i=0;i<=5; i++){
-            color += colorCode[Math.floor(Math.random()*16)];
-        }
-        console.log(color);
-        
-        document.body.style.backgroundColor = color;
-        currentColorText.textContent = `color code: ${color}`;
-    })
+// validate any color and string
+const isValidColor = (color) => {
+  const s = new Option().style;
+  s.color = color;
+  return s.color !== "";
+};
 
-    applyBtn.addEventListener("click",()=>{
-        
-        if(colorInput.value !== ""){
-            document.body.style.backgroundColor = colorInput.value;
-            currentColorText.textContent = `color code: ${colorInput.value}`;
-        }else{
-            alert("please enter valid color or color code like : #232365.")
-        }
-    })
+// Apply color to background
+const applyColor = (color) => {
+  document.body.style.backgroundColor = color;
+  colorText.textContent = `color code: ${color}`;
+  errorMsg.textContent = "";
+};
 
+// Random color generator
+randomBtn.addEventListener("click", () => {
+  const hex = "#" + Math.floor(Math.random() * 0xffffff)
+      .toString(16)
+      .padStart(6, "0");
+  colorInput.value = hex;
+  applyColor(hex);
+});
+
+// Apply custom color
+applyBtn.addEventListener('click', ()=>{
+    const val = colorInput.value.trim();
+    if(isValidColor(val)){
+        applyColor(val);
+        colorInput.value = "";
+    }else{
+        errorMsg.textContent = `⚠️ Invalid color! Try: red, #ff5733, rgb(255,0,0).`;
+    }
+})
+
+// Add the enter key functionlaties.
+colorInput.addEventListener('keydown', (e)=>{
+   if(e.key === "Enter") applyBtn.click();
+});
