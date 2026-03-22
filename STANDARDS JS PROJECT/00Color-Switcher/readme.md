@@ -152,7 +152,7 @@ chore:    🔧 Tooling / Config Files
 
 ## 📄 License
 
-Distributed under the **MIT License** — use it, fork it, learn from it. See [`LICENSE`](LICENSE) for full terms.
+Distributed under the **MIT License** — use it, fork it, learn from it. See [`LICENSE`](License) for full terms.
 
 ---
 
