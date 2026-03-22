@@ -81,3 +81,22 @@ const applyColor = (color) => {/*applies only*/}
 | RGB/RGBA | `rgb(17, 93, 134)` | ☑️ |
 | HSL/HSLA | `hsl(53, 78%, 43%)`| ☑️ |
 | Random string | `"hello"`| ❌ |
+
+## 🚀 Getting Started
+
+```bash
+  # clone the repo (with all js projects inside the folder you will get the 00Color-Switcher web app)
+  git clone https://github.com/CONNECTOSHIVAM/JAVASCRIPT-PROJECT.git
+
+  # enter the folder
+  cd 00Color-Switcher
+
+  # open in browser (Mac)
+  open index.html
+
+  # open in browser (Windows)
+  start index.html
+
+  # open in browser (Linux)
+  xdg-open index.html
+```
