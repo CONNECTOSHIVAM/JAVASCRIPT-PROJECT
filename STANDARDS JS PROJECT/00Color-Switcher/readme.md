@@ -35,3 +35,22 @@ User Input ——> isValidColor() ——> applyColor() ——> DOM Update(Update
                    |————————> showError() (if invalid)
                    
 ```
+
+
+## 📁 Folder Structure
+---
+
+```
+color-switcher/
+ |
+ |———> 📄index.html    #Structure
+ |———> 🎨style.css     #Designing
+ |———> ⚙️script.js     #Logic (DOM Manipulation)
+ |———> 📜readme.md     #About Project
+ └———> 📖License       #MIT License
+```
+
+## 🧠 Core Design Decisions
+
+**Color Validation — Use the platform:**
+
