@@ -17,3 +17,21 @@
 ## 💡 About
 A real-time background color switcher with pure HTML, CSS & JavaScript — zero libraries, zero framworks.
 This repo just not show code it show the way of thinking to tiny thing to complex.
+
+## ✨ Features
+- **Random Color** — instant hex via one click
+- **Custom Color** — accepts hex, hsl, rgb and named colors
+- **Smart Validation** — browser css parser validate css color
+- **Enter Key Support** — for input box color validations
+- ⚠️ **Inline Errors** — no ugly `alert()` dialogs
+- ⚡**Smooth Transitions** — CSS-powered fluid shifts
+
+---
+
+## 🏗️ Architecture
+```
+User Input ——> isValidColor() ——> applyColor() ——> DOM Update(Update UI)
+                   |
+                   |————————> showError() (if invalid)
+                   
+```
