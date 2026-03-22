@@ -151,7 +151,9 @@ chore:    🔧 Tooling / Config Files
 ```
 
 ## 📄 License
-Distributed under the MIT License — use it, fork it, learn from it. See [License](License) for full terms.
+
+Distributed under the **MIT License** — use it, fork it, learn from it. See [`LICENSE`](LICENSE) for full terms.
+
 ---
 
 ## 👨‍💻 Author
@@ -164,4 +166,13 @@ Distributed under the MIT License — use it, fork it, learn from it. See [Licen
 **Not Just Code** · Solutions That Actually Matter.
 
 >*Towards becoming the Top 1% Brain — Engineering solutions that solve real problems and create lasting impact.*
+
+
+
+[![GitHub](https://img.shields.io/badge/GitHub-connectoshivam-181717?style=for-the-badge&logo=github)](https://github.com/connectoshivam)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-connectoshivam-0A66C2?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/connectoshivam)
+[![Twitter](https://img.shields.io/badge/Twitter-connectoshivam-f6b355?style=for-the-badge&logo=x)](https://twitter.com/connectoshivam)
+
 </div>
+
+---
