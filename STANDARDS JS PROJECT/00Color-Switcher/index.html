@@ -1,19 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="color switcher app">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="color switcher app" />
     <title>color switcher</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <h1>Color Switcher</h1>
+
     <div class="container">
-        
+      <button class="btn">random</button>
+      <input
+        class="inp"
+        type="text"
+        id="user-input"
+        placeholder="drop here your fav color...."
+      />
+      <button class="btn">apply</button>
     </div>
-    
+    <p class="error-msg" id="errorMsg"></p>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
