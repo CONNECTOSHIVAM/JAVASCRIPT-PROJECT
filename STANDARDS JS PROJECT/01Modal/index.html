@@ -3,20 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="simple modal concepts implementations">
+    <meta name="description" content="Modal implementation with accessibility">
     <title>Modal Flex</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-   <button class="openModalBtn">Open Modal</button>
 
-   <div class="modalContainer" id="modal" role="dialog" aria-modal="true" aria-level="modalTitle">
-     <div class="modalContent">
-        <button class="closeBtn" aria-label="Close modal">✕</button>
-        <h1 id="modalTitle">Radhe radhe🙏</h1>
-        <p>Hanji kaise hai aap</p>
-     </div>
-   </div>
+    <button class="openModalBtn">Open Modal</button>
+
+    <div class="modalContainer" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+        <div class="modalContent">
+            <button class="closeBtn" aria-label="Close modal">✕</button>
+            <h1 id="modalTitle">Radhe Radhe 🙏</h1>
+            <p>Hanji kaise hai aap</p>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 </body>
