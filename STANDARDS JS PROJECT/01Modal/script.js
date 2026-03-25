@@ -3,12 +3,12 @@ const closeBtn = document.querySelector('.closeBtn');
 const modalContainer = document.querySelector('.modalContainer');
 
 const openModal = ()=>{
-    modalContainer.classList.add('.active');
+    modalContainer.classList.add('active');
     document.body.style.overflow = 'hidden';
 }
 
 const closeModal = ()=>{
-    modalContainer.classList.remove('.active');
+    modalContainer.classList.remove('active');
     document.body.style.overflow = '';
 }
 
