@@ -1,61 +1,53 @@
-* {
+*{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: cursive;
 }
-
-body {
-    height: 100vh;
+body{
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    height: 100vh;
     background: #f0f0f0;
 }
-
-.openModalBtn {
-    padding: 16px 40px;
+.openModalBtn{
+    padding: 20px 50px;
     font-size: 1.2rem;
     border: none;
-    border-radius: 8px;
     background: #333;
+    border-radius: 0.5rem;
     color: #fff;
     cursor: pointer;
-    transition: transform 0.2s ease, background 0.2s ease;
+    transition: transform 0.5s ease, background 0.5s ease;
 }
-
-.openModalBtn:hover {
+.openModalBtn:hover{
     background: #555;
     transform: scale(1.05);
 }
-
-/* Overlay */
-.modalContainer {
+.modalContainer{
     height: 100vh;
     width: 100vw;
-    background-color: rgba(0, 0, 0, 0.5);
+    background: rgba(0,0,0,0.5);
     backdrop-filter: blur(4px);
-    position: fixed;
-    top: 0;
-    left: 0;
     display: flex;
+    position: fixed;
     justify-content: center;
     align-items: center;
+    top: 0;
+    left: 0;
     opacity: 0;
     visibility: hidden;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
-
-.modalContainer.active {
+.modalContainer.active{
     opacity: 1;
     visibility: visible;
 }
-
-/* Modal Box */
-.modalContent {
+/* Modal box */
+.modalContent{
     background: #fff;
     padding: 40px 50px;
-    border-radius: 16px;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -63,26 +55,24 @@ body {
     min-width: 320px;
     box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
     transform: scale(0.9);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
+
 }
 
-.modalContainer.active .modalContent {
+.modalContent.active .modalContent{
     transform: scale(1);
 }
-
-/* Close Button */
-.closeBtn {
+.closeBtn{
     position: absolute;
     top: 14px;
     right: 16px;
-    background: none;
     border: none;
+    background: transparent;
     font-size: 1.2rem;
     cursor: pointer;
     color: #888;
     transition: color 0.2s;
 }
-
-.closeBtn:hover {
-    color: #333;
+.closeBtn:hover{
+    color: #555;
 }
